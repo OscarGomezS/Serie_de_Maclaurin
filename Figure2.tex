@@ -1,0 +1,62 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.886274509803922,0.290196078431373,0.2}
+\definecolor{color1}{rgb}{0.203921568627451,0.541176470588235,0.741176470588235}
+
+\begin{axis}[
+axis background/.style={fill=white!89.8039215686275!black},
+axis line style={white},
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black, fill=white!89.8039215686275!black},
+tick align=outside,
+tick pos=left,
+title={Error Serie de Maclaurin},
+x grid style={green!50!black},
+xlabel={Número de Términos},
+xmajorgrids,
+xmin=-0.9, xmax=18.9,
+xtick style={color=white!33.3333333333333!black},
+y grid style={green!50!black},
+ylabel={Error},
+ymajorgrids,
+ymin=-0.0452372342009505, ymax=1.04972563979744,
+ytick style={color=white!33.3333333333333!black}
+]
+\addplot [line width=1.64pt, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.864664716763387
+1 0.593994150290162
+2 0.323323583816937
+3 0.142876539501453
+4 0.0526530173437112
+5 0.0165636084806145
+6 0.00453380552624894
+};
+\addlegendentry{N° de Términos = 7, Valor de x = 2.0}
+\addplot [line width=1.64pt, color1, mark=x, mark size=3, mark options={solid}]
+table {%
+0 0.999954600070238
+1 0.999500600772613
+2 0.997230604284488
+3 0.989663949324074
+4 0.970747311923039
+5 0.932914037120968
+6 0.869858579117517
+7 0.779779353398301
+8 0.667180321249281
+9 0.542070285528148
+10 0.416960249807015
+11 0.303223853696893
+12 0.208443523605126
+13 0.135535577380689
+14 0.0834584729346629
+15 0.0487404033039788
+16 0.0270416097848012
+17 0.0142776135970497
+18 0.00718650460385444
+};
+\addlegendentry{N° de Términos = 19, Valor de x = 10.0}
+\end{axis}
+
+\end{tikzpicture}

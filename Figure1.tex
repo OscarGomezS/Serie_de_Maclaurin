@@ -1,0 +1,60 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{0.886274509803922,0.290196078431373,0.2}
+
+\begin{groupplot}[group style={group size=2 by 1}]
+\nextgroupplot[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black, fill=white!89.8039215686275!black},
+tick align=outside,
+tick pos=left,
+title={Error Serie de Maclaurin},
+x grid style={green!50!black},
+xlabel={Número de Términos},
+xmajorgrids,
+xmin=-0.3, xmax=6.3,
+xtick style={color=black},
+y grid style={green!50!black},
+ylabel={Error},
+ymajorgrids,
+ymin=-0.038472740035608, ymax=0.907671262325244,
+ytick style={color=black}
+]
+\addplot [line width=1.64pt, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.864664716763387
+1 0.593994150290162
+2 0.323323583816937
+3 0.142876539501453
+4 0.0526530173437112
+5 0.0165636084806145
+6 0.00453380552624894
+};
+\addlegendentry{N° de Términos = 7, Valor de x = 2}
+
+\nextgroupplot[
+axis background/.style={fill=white!89.8039215686275!black},
+axis line style={white},
+tick align=outside,
+tick pos=left,
+title={Variación de Términos con x},
+x grid style={blue},
+xlabel={Número de Términos},
+xmajorgrids,
+xmin=6.615, xmax=7.385,
+xtick style={color=white!33.3333333333333!black},
+y grid style={blue},
+ylabel={Valor de x},
+ymajorgrids,
+ymin=1.89, ymax=2.11,
+ytick style={color=white!33.3333333333333!black}
+]
+\addplot [semithick, color1, mark=asterisk, mark size=3, mark options={solid}]
+table {%
+7 2
+};
+\end{groupplot}
+
+\end{tikzpicture}
